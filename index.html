@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Unidad 4</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body class="border-dark" id="page-top" style="">
+  <!-- Navigation-->
+  <!-- Masthead-->
+  <!-- Portfolio Section-->
+  <!-- About Section-->
+  <!-- Contact Section-->
+  <!-- Footer-->
+  <!-- Copyright Section-->
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+  <div class="scroll-to-top d-lg-none position-fixed" style="display: none; opacity: 0.810103;">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
+  </div>
+  <!-- Portfolio Modals-->
+  <!-- Portfolio Modal 1-->
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-12 w-100" style="">
+              <!-- Portfolio Modal - Title-->
+              <h3 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Unidad #4</h3>
+              <h5 class="portfolio-modal-title text-uppercase mb-0 text-primary p-1" id="portfolioModal1Label">procesamiento paralelo</h5>
+              <div class="divider-custom m-0">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+              </div>
+              <h4 class="text-left"><br>4.1 Aspectos básicos de la computación paralela </h4>
+              <!-- Icon Divider-->
+              <p style="" class="text-left">Las computadoras paralelas pueden clasificarse según el nivel de paralelismo que admite su hardware: equipos con procesadores multinúcleo y multi-procesador que tienen múltiples elementos de procesamiento dentro de una sola máquina y los clústeres, MPPS y grids que utilizan varios equipos para trabajar en la misma tarea. Muchas veces, para acelerar la tareas específicas, se utilizan arquitecturas especializadas de computación en paralelo junto a procesadores tradicionales. Los programas informáticos paralelos son más difíciles de escribir que los secuenciales,5 porque la concurrencia introduce nuevos tipos de errores de software, siendo las condiciones de carrera los más comunes. La comunicación y sincronización entre diferentes subtareas son algunos de los mayores obstáculos para obtener un buen rendimiento del programa paralelo. La máxima aceleración posible de un programa como resultado de la paralelización se conoce como la ley de Amdahl. </p><img class="img-fluid d-block" src="assets/img/portfolio/paralela.jpg">
+              <h4 class="text-left"><br>4.2 Tipos de computación paralela </h4>
+              <p style="" class="text-left">Las computadoras paralelas pueden clasificarse según el nivel de paralelismo que admite su hardware: equipos con procesadores multinúcleo y multi-procesador que tienen múltiples elementos de procesamiento dentro de una sola máquina y los clústeres, MPPS y grids que utilizan varios equipos para trabajar en la misma tarea. Muchas veces, para acelerar la tareas específicas, se utilizan arquitecturas especializadas de computación en paralelo junto a procesadores tradicionales.&nbsp;<br><br>Taxonomía de las Computadoras<br>&nbsp;Las diferentes posibilidades existentes para desarrollar sistemas paralelos hacen que una clasificación definitiva sea complicada. Se muestra una clasificación clásica propuesta por Flynn, que se basa en el ciclo de instrucciones y en el flujo de dato.<br><br>&nbsp;<b>SISD:</b> Instrucción única, datos únicos. Las instrucciones se ejecutan secuencialmente pero pueden estar solapadas en las etapas de ejecución.</p><img class="img-fluid d-block" src="assets/img/portfolio/SISD.png">
+              <p style="" class="text-left"><b>SIMD:</b> Instrucción única, datos múltiples. Son los procesadores matriciales en los que existen varias unidades de procesamiento trabajando sobre flujos de datos distintos pero ejecutando la misma instrucción.</p><img class="img-fluid d-block" src="assets/img/portfolio/SIMD.png">
+              <p style="" class="text-left">&nbsp;<b>MISD:</b> Instrucción múltiple, datos únicos. Este se caracteriza por la existencia de varias unidades de procesamiento cada una ejecutando una instrucción diferente pero sobre el mismo flujo de datos.</p><img class="img-fluid d-block" src="assets/img/portfolio/MISD.png">
+              <p style="" class="text-left">&nbsp;<b>MIMD: </b>Es una técnica empleada para lograr paralelismo. Las máquinas que usan MIMD tienen un número de procesadores que funcionan de manera asíncrona e independiente.</p><img class="img-fluid d-block w-25" src="assets/img/portfolio/MIMD.png">
+              <h5 class="text-left"><br>4.2.2 Arquitectura de los computadores secuenciales </h5>
+              <p style="" class="text-left">A diferencia de los sistemas combinacionales, en los sistemas secuenciales, los valores de las salidas, en un momento dado, no dependen exclusivamente de los valores de las entradas en dicho momento, sino también de los valores anteriores. El sistema secuencial más simple es el biestable. La mayoría de los sistemas secuenciales están gobernados por señales de reloj. A éstos se los denomina "síncronos" o "sincrónicos", a diferencia de los "asíncronos" o "asincrónicos" que son aquellos que no son controlados por señales de reloj.&nbsp;<br><br>A continuación se indican los principales sistemas secuenciales que pueden encontrarse en forma de circuito integrado o como estructuras en sistemas programados:&nbsp;<br><br>•Contador&nbsp;&nbsp;<br>•Registros&nbsp;</p>
+              <h5 class="text-left" contenteditable="true"><br>4.2.3 Organización de direcciones de memoria </h5>
+              <p style="" class="text-left">La memoria de acceso secuencial son memorias en la cuales para acceder a un registro en particular se tienen que leer registro por registro desde el inicio hasta alcanzar el registro particular que contiene el dato que se requiere.&nbsp;<br><br>Estas memorias se clasifican en:&nbsp;<br>• Registros de desplazamiento&nbsp;<br>•Dispositivos por acoplamiento por carga&nbsp;<br>•Memorias de burbuja<br></p>
+              <h4 class="text-left">4.3 Sistemas de memoria (compartida). Multiprocesadores</h4>
+              <p style="" class="text-left">Un multiprocesador puede verse como un computador paralelo compuesto por varios procesadores interconectados que comparten un mismo sistema de memoria.&nbsp;<br>Los sistemas multiprocesadores son arquitecturas MIMD con memoria compartida. Tienen un único espacio de direcciones para todos los procesadores y los mecanismos de comunicación se basan en el paso de mensajes desde el punto de vista del programador.&nbsp;<br><br>Dado que los multiprocesadores comparten diferentes módulos de memoria, pudiendo acceder a un mismo módulo varios procesadores, a los multiprocesadores también se les llama sistemas de memoria compartida.<br><br></p><img class="img-fluid d-block" src="assets/img/portfolio/multip.jpg">
+              <p style="" class="text-left">Dependiendo de la forma en que los procesadores comparten la memoria, se clasifican en sistemas multiprocesador UMA, NUMA y COMA. Multiproceso es tradicionalmente conocido como el uso de múltiples procesos concurrentes en un sistema en lugar de un único proceso en un instante determinado. Como la multitarea que permite a múltiples procesos compartir una única CPU, múltiples CPUs pueden ser utilizados para ejecutar múltiples hilos dentro de un único proceso.&nbsp;</p>
+              <h5 class="text-left">4.3.1 Redes de Interconexión Dinámica (Indirecta) Medio compartido, Conmutadas.</h5>
+              <h6 class="text-left" contenteditable="true"><br>Redes de Interconexión Dinámica</h6>
+              <p style="" class="text-left">Las redes de interconexión dinámicas son convenientes en los casos en que se desee una red de propósito general ya que son fácilmente reconfigurables. También por eso, este tipo de Redes facilitan mucho la escalabilidad. En general, las redes dinámicas necesitan de elementos de conexión específicos como pueden ser árbitros de bus, conmutadores, etc.&nbsp;<br><br>Las principales topologías de redes dinámicas son las siguientes:<br><br>&nbsp;•Buses&nbsp;<br>•Redes de líneas cruzadas o matriz de conmutación (crossbar)&nbsp;<br>•Redes multietapa o MIN (Multistage Interconnection Network)&nbsp;<br>•Redes Omega&nbsp;<br>•Redes de línea base o Redes Mariposa&nbsp;&nbsp;<br>•Redes Delta o Redes de Closs&nbsp;<br>•Redes de Benes</p>
+              <h6 class="text-left" contenteditable="true">Redes de Interconexión Dinámica</h6>
+              <p style="" class="text-left">Dependiendo de la forma en que los procesadores comparten la memoria, se clasifican en sistemas multiprocesador UMA, NUMA y COMA. Multiproceso es tradicionalmente conocido como el uso de múltiples procesos concurrentes en un sistema en lugar de un único proceso en un instante determinado. Como la multitarea que permite a múltiples procesos compartir una única CPU, múltiples CPUs pueden ser utilizados para ejecutar múltiples hilos dentro de un único proceso.&nbsp;</p>
+              <h6 class="text-left"> Redes de Medio compartido</h6>
+              <p style="" class="text-left"><b>Entorno de medios compartidos&nbsp;</b><br>Ocurre cuando varios host tiene acceso al mismo medio.&nbsp;<br>Por ejemplo, si varios PC se encuentran conectados al mismo cable físico, a la misma fibra óptica entonces se dice que comparten el mismo entorno de medios.&nbsp;<br><b>Entorno extendido de medios compartidos&nbsp;</b><br>Es un tipo especial de entorno de medios compartidos en el que los dispositivos de networking pueden ampliar el entorno de modo que pueda incluir accesos múltiples o distancias mayores de cableado. El vehículo básico que empleamos para acceder a nuestra red es la conexión de nuestro ordenador a la misma. Se realiza generalmente mediante cables. Dependiendo del cable y de sus características físicas, podremos realizar diferentes conexiones.&nbsp;<br><br>La conexión física entre el ordenador y la red se establece siempre a través de un puerto. Un conector permite enlazar el medio de transmisión con la circuitería de acceso a la red. Para cada sistema de cableado se emplea un puerto distinto y algunas veces un dispositivo accesorio El cable, que más proyección tiene hoy en día es el de fibra óptica, pero hoy por hoy es caro y difícil de instalar. Sin embargo, es recomendable su utilización para enlazar redes distantes y para crear enlaces muy rápidos entre servidores o interconexión de redes.&nbsp;<br><br>Los tres principales medios de transmisión utilizados en las redes locales son:&nbsp;<br>•Par trenzado&nbsp;<br>•Cable coaxial&nbsp;<br>•Fibra óptica.</p>
+              <h6 class="text-left">Redes Conmutadas</h6>
+              <p style="" class="text-left">Consiste en un conjunto de nodos interconectados entre si, a través de medios de transmisión, formando la mayoría de las veces una topología mallada, donde la información se transfiere encaminándola del nodo de origen al nodo destino mediante conmutación entre nodos intermedios.&nbsp;<br><br>Una transmisión de este tipo tiene 3 fases:&nbsp;&nbsp;<br>•Establecimiento de la conexión&nbsp;<br>•Transferencia de la información&nbsp;<br>•Liberación de la conexión&nbsp;<br><br>La conmutación en un nodo a la conexión física o lógica de un camino de entrada al nodo con un camino de salida del nodo con el fin de transferir la información que llegue por el primer camino al segundo.la redes conmutadas son las redes de área extensa.&nbsp;<br><br>Las redes conmutadas se dividen en:&nbsp;<br>•Conmutación de paquetes&nbsp;<br>•Conmutación de circuitos<br><br><b>La conmutación de paquetes:</b><br>Es un método de envío de datos en una red de computadoras. Un paquete es un grupo de información que consta de dos partes: los datos propiamente dichos y la información de control, que indica la ruta a seguir a lo largo de la red hasta el destino del paquete.<br><br><b>La conmutación de circuitos:&nbsp;</b><br>Es un tipo de conexión que realizan los diferentes nodos de una red para lograr un camino apropiado para conectar dos usuarios de una red de telecomunicaciones. A diferencia de lo que ocurre en la conmutación de paquetes, en este tipo de conmutación se establece un canal de comunicaciones dedicado entre dos estaciones.</p>
+              <h4 class="text-left">4.4 Sistemas de memoria distribuida. Multicomputadores</h4>
+              <p style="" class="text-left">Un cluster es una tipo de arquitectura paralela distribuida que consiste de un conjunto de computadores independientes (y bajo coste en principio) interconectados operando de forma conjunta como un único recurso computacional Sin embargo, cada computador puede utilizarse de forma independiente o separada.&nbsp;</p>
+              <h5 class="text-left">4.4.1 Redes de interconexión estáticas </h5>
+              <p style="" class="text-left">Las redes estáticas emplean enlaces directos fijos entre los nodos. Estos enlaces, una vez fabricado el sistema son difíciles de cambiar, por lo que la escalabilidad de estas topologías es baja. Las redes estáticas pueden utilizarse con eficiencia en los sistemas en que pueden predecirse el tipo de tráfico de comunicaciones entre sus procesadores.&nbsp;<br></p>
+              <h6 class="text-left">Clases de redes de interconexión</h6>
+              <p style="" class="text-left"><b>Formación lineal:&nbsp;</b><br>Se trata de una red unidimensional en que los nodos se conectan cada uno con el siguiente mediante N-1 enlaces formando una línea.&nbsp;<br><br><b>Mallas y toros:</b>&nbsp;<br>Esta red de interconexión es muy utilizada en la práctica. Las redes en toro son mallas en que sus filas y columnas tienen conexiones en anillo, esto contribuye a disminuir su diámetro. Esta pequeña modificación permite convertir a las mallas en estructuras simétricas y además reduce su diámetro a la mitad.</p>
+              <h4 class="text-left">4.5 Casos de Estudio</h4>
+              <p style="" class="text-left">La programación paralela involucra muchos aspectos que no se presenta en la programación convencional (secuencial).&nbsp;<br>El diseño de un programa paralelo tiene que considerar entre otras cosas, el tipo de arquitectura sobre la cual se va a ejecutar el programa, las necesidades de tiempo y espacio que requiere la aplicación, el modelo de programación paralelo adecuado para implantar la aplicación y la forma de coordinar y comunicar a diferentes procesadores para que resuelvan un problema común. Existen varias herramientas disponibles para programación paralela.&nbsp;<br><br><b>Líneas de Investigación y desarrollo&nbsp;</b><br><br>•Paralelización de algoritmos secuenciales. Diseño y optimización de algoritmos.&nbsp;<br>•Arquitecturas multicore y multithreading en multicore.&nbsp;<br>•Arquitecturas multiprocesador.&nbsp;<br>•Modelos de representación y predicción de performance de algoritmos paralelos.&nbsp;<br>•Mapping y scheduling de aplicaciones paralelas sobre distintas arquitecturas multiprocesador.&nbsp;<br>•Métricas del paralelismo. Speedup, eficiencia, rendimiento, granularidad, superlinealidad.&nbsp;<br>•Balance de carga estático y dinámico. Técnicas de balanceo de carga.&nbsp;<br>•Análisis de los problemas de migración y asignación óptima de procesos y datos a procesadores.&nbsp;<br>•Migración dinámica.&nbsp;<br>•Patrones de diseño de algoritmos paralelos.&nbsp;<br>•Escalabilidad de algoritmos paralelos en arquitecturas multiprocesador distribuidas.&nbsp;<br>•Implementación de soluciones sobre diferentes modelos de arquitectura homogéneas y heterogéneas (multicores, clusters, multiclusters y grid).&nbsp;<br>•Ajuste del modelo de software al modelo de hardware, a fin de optimizar el sistema paralelo.&nbsp;<br>•Evaluación de performance.&nbsp;&nbsp;<br>•Laboratorios remotos para el acceso transparente a recursos de cómputo paralelo.&nbsp;</p>
+              <!-- Portfolio Modal - Image-->
+              <!-- Portfolio Modal - Text-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio Modal 2-->
+  <!-- Portfolio Modal 3-->
+  <!-- Portfolio Modal 4-->
+  <!-- Portfolio Modal 5-->
+  <!-- Portfolio Modal 6-->
+  <!-- Bootstrap core JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" style=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Third party plugin JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <!-- Contact form JS-->
+  <script src="assets/mail/jqBootstrapValidation.js"></script>
+  <script src="assets/mail/contact_me.js" style=""></script>
+  <!-- Core theme JS-->
+  <script src="js/scripts.js" style=""></script>
+  
+</body>
+
+</html>
